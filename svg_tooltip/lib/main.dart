@@ -52,7 +52,7 @@ class _MyHomePageState extends State<_MyHomePage> {
         body: SfCartesianChart(
             tooltipBehavior: _tooltipBehavior,
             primaryXAxis: CategoryAxis(),
-            series: <ChartSeries<_ChartData, String>>[
+            series: <ColumnSeries<_ChartData, String>>[
           ColumnSeries<_ChartData, String>(
             dataSource: _chartData,
             xValueMapper: (_ChartData data, _) => data.year,
